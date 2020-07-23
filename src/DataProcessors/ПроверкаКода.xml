@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="04079134-eafc-45f7-b392-bddca981ae84">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПроверкаКода" category="Object">
+				<xr:TypeId>41b79969-354a-42ed-9909-29daa5b6311a</xr:TypeId>
+				<xr:ValueId>f3e77aa8-c228-4159-8a5a-7651327f821a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПроверкаКода" category="Manager">
+				<xr:TypeId>84a0dbce-e090-47b9-ac47-02bd8e35f1b7</xr:TypeId>
+				<xr:ValueId>edd6945e-345f-43d7-af04-23f1d526b901</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПроверкаКода</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка кода</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.ПроверкаКода.Form.ФормаУправляемая</DefaultForm>
+			<AuxiliaryForm>DataProcessor.ПроверкаКода.Form.ФормаУправляемая</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаУправляемая</Form>
+			<Template>index</Template>
+			<Template>lib_codemirror_js</Template>
+			<Template>lib_codemirror_css</Template>
+			<Template>mode_1c_1c_js</Template>
+			<Template>theme_1c_css</Template>
+			<Template>addon_comment_comment_js</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

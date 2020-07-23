@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+<title>CodeMirror 1C</title>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+<head>
+<link rel='stylesheet' href='https://www-1c.ru/wp-content/plugins/codemirror1c/lib/codemirror.css'> 
+<link rel='stylesheet' href='https://www-1c.ru/wp-content/plugins/codemirror1c/theme/1c.css'>
+<script src='https://www-1c.ru/wp-content/plugins/codemirror1c/lib/codemirror.js'></script>
+<script src='https://www-1c.ru/wp-content/plugins/codemirror1c/mode/1c/1c.js'></script>
+<script src='https://www-1c.ru/wp-content/plugins/codemirror1c/addon/comment/comment.js'></script>
+</head>
+<body>
+	<textarea id='code' name='code'></textarea>
+  	<script type='text/javascript'>
+  	var codeArea = document.getElementById('code');
+  
+  	var editor = CodeMirror.fromTextArea(codeArea,{
+    mode: 'text/x-1c',
+    theme: '1c',
+    indentWithTabs: true,
+    styleActiveLine: true,
+    lineNumbers: true,
+    lineWrapping: true,
+    smartIndent: true,
+    electricChars: true,
+    autofocus: true,
+    indentUnit: 4,
+    readOnly: false,
+    highlightSelectionMatches: {showToken: /[0-9a-zA-Zа-яёА-ЯЁ&]/, annotateScrollbar: false},
+    }); 
+    editor.on("change", function OnChange(cm){document.getElementById('code').innerHTML = cm.getValue();});
+    editor.setOption("extraKeys", {
+      'Ctrl-Num/':     function(cm){Comment()},
+      'Ctrl-/':     function(cm){Comment()},
+      'Shift-Ctrl-/': function(cm){Uncomment()},
+      'Shift-Ctrl-Num/': function(cm){Uncomment()},
+    });
+    editor.setSize( '100%', '100%');
+  	        
+    function Comment(){
+      editor.lineComment(editor.getCursor("from"),editor.getCursor("to"), {lineComment: '//', indent: true});
+    }
+  
+    function Uncomment(){
+      editor.uncomment(editor.getCursor("from"),editor.getCursor("to"), {lineComment: '//', indent: true});
+    }
+
+    function Comment(){
+      editor.lineComment(editor.getCursor("from"),editor.getCursor("to"), {lineComment: '//', indent: true});
+    }
+  
+    function Uncomment(){
+      editor.uncomment(editor.getCursor("from"),editor.getCursor("to"), {lineComment: '//', indent: true});
+    }
+ </script>  
+</body>
+</html>

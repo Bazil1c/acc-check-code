@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проверка кода</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьПроверкуКода" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыполнитьПроверкуКода</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьПроверкуКодаРасширеннаяПодсказка" id="5"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Page name="СтраницаТребования" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требования</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница требования</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаТребованияРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Table name="Требования" id="6">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<SelectionMode>SingleRow</SelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Требования</DataPath>
+							<RowPictureDataPath>Требования.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.zip</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<ContextMenu name="ТребованияКонтекстноеМеню" id="7"/>
+							<AutoCommandBar name="ТребованияКоманднаяПанель" id="8">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТребованияУстановитьПометки" id="25">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаУстановитьПометки</CommandName>
+										<ExtendedTooltip name="ТребованияУстановитьПометкиРасширеннаяПодсказка" id="26"/>
+									</Button>
+									<Button name="ТребованияСнятьПометки" id="27">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаСнятьПометки</CommandName>
+										<ExtendedTooltip name="ТребованияСнятьПометкиРасширеннаяПодсказка" id="28"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТребованияРасширеннаяПодсказка" id="9"/>
+							<SearchStringAddition name="ТребованияСтрокаПоиска" id="10">
+								<AdditionSource>
+									<Item>Требования</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТребованияСтрокаПоискаКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="ТребованияСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТребованияСостояниеПросмотра" id="13">
+								<AdditionSource>
+									<Item>Требования</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТребованияСостояниеПросмотраКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="ТребованияСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТребованияУправлениеПоиском" id="16">
+								<AdditionSource>
+									<Item>Требования</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТребованияУправлениеПоискомКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="ТребованияУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ТребованияГруппаПометка" id="29">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Требования группа пометка</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ТребованияГруппаПометкаРасширеннаяПодсказка" id="30"/>
+									<ChildItems>
+										<CheckBoxField name="ТребованияПометка" id="22">
+											<DataPath>Требования.Пометка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ТребованияПометкаКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ТребованияПометкаРасширеннаяПодсказка" id="24"/>
+											<Events>
+												<Event name="OnChange">ТребованияПометкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ТребованияТребование" id="19">
+											<DataPath>Требования.Требование</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТребованияТребованиеКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ТребованияТребованиеРасширеннаяПодсказка" id="21"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаТекстМодуля" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст модуля</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница текст модуля</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаТекстМодуляРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСвойстваМодуля" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Свойства модуля</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Свойства модуля</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСвойстваМодуляРасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<InputField name="ТипМодуля" id="42">
+									<DataPath>ТипМодуля</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ТипМодуляКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ТипМодуляРасширеннаяПодсказка" id="44"/>
+									<Events>
+										<Event name="OnChange">ТипМодуляПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаСвойстваОбщегоМодуля" id="48">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Свойства общего модуля</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа свойства общего модуля</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСвойстваОбщегоМодуляРасширеннаяПодсказка" id="49"/>
+									<ChildItems>
+										<CheckBoxField name="КлиентУправляемоеПриложение" id="50">
+											<DataPath>КлиентУправляемоеПриложение</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КлиентУправляемоеПриложениеКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="КлиентУправляемоеПриложениеРасширеннаяПодсказка" id="52"/>
+										</CheckBoxField>
+										<CheckBoxField name="Сервер" id="53">
+											<DataPath>Сервер</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СерверКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="55"/>
+										</CheckBoxField>
+										<CheckBoxField name="ВнешнееСоединение" id="56">
+											<DataPath>ВнешнееСоединение</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВнешнееСоединениеКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ВнешнееСоединениеРасширеннаяПодсказка" id="58"/>
+										</CheckBoxField>
+										<CheckBoxField name="КлиентОбычноеПриложение" id="59">
+											<DataPath>КлиентОбычноеПриложение</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КлиентОбычноеПриложениеКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="КлиентОбычноеПриложениеРасширеннаяПодсказка" id="61"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТекстМодуля" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текст модуля</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текст модуля</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТекстМодуляРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<HTMLDocumentField name="ТекстМодуляHTML" id="88">
+									<DataPath>ТекстМодуляHTML</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ТекстМодуляHTMLКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ТекстМодуляHTMLРасширеннаяПодсказка" id="90"/>
+									<Events>
+										<Event name="DocumentComplete">СтраницаHTMLДокументСформирован</Event>
+									</Events>
+								</HTMLDocumentField>
+								<UsualGroup name="ГруппаНавигацияПоОшибкам" id="93">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа навигация по ошибкам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа навигация по ошибкам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНавигацияПоОшибкамРасширеннаяПодсказка" id="94"/>
+									<ChildItems>
+										<LabelField name="КоличествоЗамечаний" id="45">
+											<DataPath>КоличествоЗамечаний</DataPath>
+											<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="КоличествоЗамечанийКонтекстноеМеню" id="46"/>
+											<ExtendedTooltip name="КоличествоЗамечанийРасширеннаяПодсказка" id="47"/>
+										</LabelField>
+										<Table name="Ошибки" id="66">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<SelectionMode>SingleRow</SelectionMode>
+											<Header>false</Header>
+											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<HorizontalStretch>false</HorizontalStretch>
+											<DataPath>Ошибки</DataPath>
+											<BehaviorOnHorizontalCompression>MoveItemsByImportance</BehaviorOnHorizontalCompression>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ОшибкиКонтекстноеМеню" id="67">
+												<Autofill>false</Autofill>
+											</ContextMenu>
+											<AutoCommandBar name="ОшибкиКоманднаяПанель" id="68"/>
+											<ExtendedTooltip name="ОшибкиРасширеннаяПодсказка" id="69"/>
+											<SearchStringAddition name="ОшибкиСтрокаПоиска" id="70">
+												<AdditionSource>
+													<Item>Ошибки</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОшибкиСтрокаПоискаКонтекстноеМеню" id="71"/>
+												<ExtendedTooltip name="ОшибкиСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОшибкиСостояниеПросмотра" id="73">
+												<AdditionSource>
+													<Item>Ошибки</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОшибкиСостояниеПросмотраКонтекстноеМеню" id="74"/>
+												<ExtendedTooltip name="ОшибкиСостояниеПросмотраРасширеннаяПодсказка" id="75"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОшибкиУправлениеПоиском" id="76">
+												<AdditionSource>
+													<Item>Ошибки</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОшибкиУправлениеПоискомКонтекстноеМеню" id="77"/>
+												<ExtendedTooltip name="ОшибкиУправлениеПоискомРасширеннаяПодсказка" id="78"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">ОшибкиПриАктивизацииСтроки</Event>
+												<Event name="OnActivateCell">ОшибкиПриАктивизацииЯчейки</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="ОшибкиОписание" id="79">
+													<DataPath>Ошибки.Описание</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoCellHeight>true</AutoCellHeight>
+													<ContextMenu name="ОшибкиОписаниеКонтекстноеМеню" id="80"/>
+													<ExtendedTooltip name="ОшибкиОписаниеРасширеннаяПодсказка" id="81"/>
+												</InputField>
+												<InputField name="ОшибкиНомерОшибки" id="82">
+													<DataPath>Ошибки.НомерОшибки</DataPath>
+													<Visible>false</Visible>
+													<Enabled>false</Enabled>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОшибкиНомерОшибкиКонтекстноеМеню" id="83"/>
+													<ExtendedTooltip name="ОшибкиНомерОшибкиРасширеннаяПодсказка" id="84"/>
+												</InputField>
+												<PictureField name="ОшибкиСсылка" id="85">
+													<DataPath>Ошибки.Ссылка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ValuesPicture>
+														<xr:Ref>StdPicture.Select</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="ОшибкиСсылкаКонтекстноеМеню" id="86"/>
+													<ExtendedTooltip name="ОшибкиСсылкаРасширеннаяПодсказка" id="87"/>
+												</PictureField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПроверкаКода</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТекстМодуля" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст модуля</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ТекстМодуля</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Требования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Save>
+				<Field>Требования</Field>
+			</Save>
+			<Columns>
+				<Column name="Требование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Требования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипМодуля" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип модуля</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыОбъектов</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ТипМодуля</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КоличествоЗамечаний" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество замечаний</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сервер" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>Сервер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КлиентОбычноеПриложение" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент (обычное приложение)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>КлиентОбычноеПриложение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВнешнееСоединение" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешнее соединение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВнешнееСоединение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КлиентУправляемоеПриложение" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент (управляемое приложение)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>КлиентУправляемоеПриложение</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыОбработчикаОжидания" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры обработчика ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АдресРезультата" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ошибки" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Описание" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерОшибки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ошибка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбнаруживаемыеОшибки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Правило" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Правила</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Требование" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Требования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаНаСтандарт" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеТребования" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекстМодуляHTML" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст модуля HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьПроверкуКода" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проверку кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проверку кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроверкуКода</Action>
+		</Command>
+		<Command name="КомандаСнятьПометки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьПометки</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаУстановитьПометки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьПометки</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

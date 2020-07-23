@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Catalog uuid="2f02af75-0b81-4363-9cd1-941d7e7573d8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Правила" category="Object">
+				<xr:TypeId>912f2c03-01c9-4e7e-97a8-0087be4b0d2d</xr:TypeId>
+				<xr:ValueId>97867a1c-9495-482c-b040-a55a0289f0a1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Правила" category="Ref">
+				<xr:TypeId>e02c1abe-83e7-4324-affe-01be222f2475</xr:TypeId>
+				<xr:ValueId>2fc5c03b-44a2-4b1f-930f-1b98b327aa20</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Правила" category="Selection">
+				<xr:TypeId>d6fb5300-e167-4521-957f-5e915fe6e5b5</xr:TypeId>
+				<xr:ValueId>382bce6f-5846-47c9-a644-7ba8cf7c0f80</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Правила" category="List">
+				<xr:TypeId>83617201-b4ab-4a0f-9c35-1855bfe9ab54</xr:TypeId>
+				<xr:ValueId>8f281aa8-2a69-41b8-acb8-9b4048dbbbf9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Правила" category="Manager">
+				<xr:TypeId>12847b2f-2c88-44ec-b9a0-8e699d1a7d53</xr:TypeId>
+				<xr:ValueId>cd72bd42-1d8d-40a0-bd29-d196f5690e39</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Правила</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Catalog uuid="77a89777-7647-48e6-b53b-45577b351139">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ОбнаруживаемыеОшибки" category="Object">
+				<xr:TypeId>26493b84-dec5-44f4-8929-1aa07a948db0</xr:TypeId>
+				<xr:ValueId>43199f68-6a56-4127-81af-d8e7022fd8f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ОбнаруживаемыеОшибки" category="Ref">
+				<xr:TypeId>aca7e9ec-3139-48e0-98ac-12ac5f3bf33e</xr:TypeId>
+				<xr:ValueId>d7ae728f-40ab-4d28-81d4-f6d35a7fa967</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ОбнаруживаемыеОшибки" category="Selection">
+				<xr:TypeId>61b0a59c-2393-42bf-b1ab-4f0d9f9e8425</xr:TypeId>
+				<xr:ValueId>4120752b-32f9-4564-8dac-8e07870d3eb0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ОбнаруживаемыеОшибки" category="List">
+				<xr:TypeId>644639ee-a0b3-4fee-906b-476519d7cdce</xr:TypeId>
+				<xr:ValueId>15c27083-3798-4d65-b4c2-7b0db26367a5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ОбнаруживаемыеОшибки" category="Manager">
+				<xr:TypeId>8d659895-8722-4eac-b76f-e51dc7ebf62f</xr:TypeId>
+				<xr:ValueId>d2dbc544-a975-4b81-9147-41ff4721c340</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОбнаруживаемыеОшибки</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>
